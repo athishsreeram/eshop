@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                
+                var filter = $(this).val();
+                count = 0;
+                
+                $('#results div').each(function() {
+                    // If the list item does not contain the text phrase fade it out
+                    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                    $(this).hide();
+                    // Show the list item if the phrase matches and increase the count by 1
+                    } else {
+                    $(this).show();
+                    count++;
+                    }
+                    });
+                
+                });
+            });
+    </script>
+    <style>
+    .search-basic-cs {
+        width: 130px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    /* When the input field gets focus, change its width to 100% */
+    .search-basic-cs:focus {
+        width: 100%;
+    }
+    </style>
     <body>
         {{- partial "header.html" . -}}
             <div class="container">
@@ -10,13 +42,17 @@
                     </div>
                 </div>
                 <div class="row">
+                    <label for="search-basic">Search Input:</label>
+                    <input id="myInput" class="search-basic-cs" type="search" name="search" id="search-basic" placeholder="Search..">
+                </div>
+                <br>
+                <div class="row">
+                    <div id="results" class="row" >
                     {{ range .Data.Pages }} 
                         {{ partial "products/list/product-list-item.html" . }} 
                     {{ end }}
+                    </div>
                 </div>
             </div>
         {{- partial "footer.html" . -}}
     </body>
-</html>
-
-

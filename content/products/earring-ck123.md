@@ -1,12 +1,12 @@
 ---
-title: "Bangle"
+title: "Earring CK123"
 date: 2019-01-12T22:14:57-06:00
-thumbnailImage: "https://staticimg.titan.co.in/Tanishq/Catalog/513217VBR1AP3_1.jpg"
+thumbnailImage: "https://ae01.alicdn.com/kf/HTB1DE6EIFXXXXbCXVXXq6xXFXXXf/Indian-Wedding-Earring-Chandelier-Hanging-Long-Earrings-Gold-Color-Multilayer-Imitation-Pearl-Earings-Fashion-Jewelry-Brincos.jpg"
 draft: false
-actualPrice: "10"
-newPrice: 
+actualPrice: "9"
+newPrice: ""
 inStock: true
-categories: ["Bangle"]
+categories: ["Earrings","Pearl"]
 ---
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  

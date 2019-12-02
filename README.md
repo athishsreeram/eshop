@@ -53,7 +53,7 @@ https://eshop.athishsreeram.now.sh
 ![alt text](https://github.com/athishsreeram/eshop/blob/master/img/zeith4.png)
 
 
-## Hugo Create public folder worked
+## Hugo Create public folder
 
 ```
 hugo

@@ -1,12 +1,12 @@
 ---
-title: "Bangle"
+title: "Chain BC132"
 date: 2019-01-12T22:14:57-06:00
-thumbnailImage: "https://staticimg.titan.co.in/Tanishq/Catalog/513217VBR1AP3_1.jpg"
+thumbnailImage: "https://s.ecrater.com/stores/27305/5c4e1e9a1f6a9_27305b.jpg"
 draft: false
-actualPrice: "10"
-newPrice: 
+actualPrice: "12"
+newPrice: "10"
 inStock: true
-categories: ["Bangle"]
+categories: ["Chain"]
 ---
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  

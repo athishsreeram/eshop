@@ -7,25 +7,54 @@
             <div class="row">
             
                 <!-- Left Column / Headphones Image -->
-                <div class="col-sm">
+                <div class="col-sm-5">
                   <img data-image="black" src="{{ .Params.thumbnailImage }}" alt="" width="100%">
                 </div>
-                
+                <div class="col-1">
+                </div>
                 <!-- Right Column -->
-                <div class="col-sm">
+                <div class="col-sm-6">
                 
                       <!-- Product Description -->
-                      <div class="row" >
-                      <div class=" product-description">
+                     <div class="row" >
+                      <div class="product-description">
                         <span>{{ .Title }}</span>
                         <p>{{ .Content }}</p>
                       </div>
                       </div>
                       <div class="row" >
                         <div class="product-price">
-                          <span>{{ .Params.actualPrice }}$</span>
-                          <a href="#" class="cart-btn">Contact Us</a>
+                        {{ if .Params.actualPrice }}
+                            {{ $.Scratch.Set "minimumPrice" (.Params.actualPrice | string) }}
+                        {{ else }}
+                            {{ $.Scratch.Set "minimumPrice" "999999999999999"}}                 
+                        {{ end }}
+            
+                        {{ if .Params.newPrice }}
+                            {{ $.Scratch.Set "newPrice" (.Params.newPrice | string) }}
+                        {{ else }}
+                            {{ $.Scratch.Set "newPrice" "999999999999999"}}                 
+                        {{ end }}
+            
+                        {{ if .Params.inStock }}
+                            {{ $.Scratch.Set "inStock" (.Params.inStock | string) }}
+                        {{ else }}
+                            {{ $.Scratch.Set "inStock" "false" }}
+                        {{ end }}
+                        {{ if (eq ($.Scratch.Get "newPrice") "999999999999999")}} 
+                            {{ $.Scratch.Get "minimumPrice" }}  
+                        {{else}}
+                             Was: <strike> {{ $.Scratch.Get "minimumPrice" }}</strike>&nbsp; Now: {{ $.Scratch.Get "newPrice" }} 
+                        {{end}}$ 
+                        {{ if not (eq ($.Scratch.Get "inStock") "true")}} <span class="font-weight-bold">— Sold Out</span> {{ end }}
                         </div>
+                      </div>
+                    </br>
+                      <div class="row">
+                          <div class="product-price">
+                          <button class="sc-add-to-cart" type="submit" class="cart-btn" data-name="{{ .Title }}" data-price="{{ .Params.actualPrice }}" >Add To Wishlist</a>
+                          </button>
+                          </div>
                       </div>
         
                 </div>
@@ -34,6 +63,3 @@
         {{- partial "footer.html" . -}}
     </body>
 </html>
-
-
-

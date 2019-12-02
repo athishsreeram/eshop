@@ -1,13 +1,9 @@
 baseURL = "https://eshop-psi-ten.now.sh/"
 languageCode = "en-us"
 title = "EShop"
-
-
 theme = "eshop"
-
 [permalinks]
   products = "/:filename/"
-
 [menu]
   [[menu.main]]
     name = "Collections"
@@ -15,12 +11,12 @@ theme = "eshop"
     url = "/products/"
     weight = 1
   [[menu.main]]
-    name = "Upcoming Sale"
+    name = "Welcome"
     pre = "Collections"
     url = "/upcoming/upcoming"
     weight = 2
   [[menu.main]]
-    name = "Contact Us"
+    name = "About Us"
     pre = "Upcoming Sale"
     url = "/contacts/contacts"
     weight = 3

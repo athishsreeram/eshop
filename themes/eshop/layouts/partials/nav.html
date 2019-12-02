@@ -2,8 +2,20 @@
   <nav id="nav" class="nav justify-content-center">
   {{ range .Site.Menus.main }} 
     {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+    {{ $current := .Weight }}
     {{ $text := print $icon " " .Name | safeHTML }}
-    <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+    <a id="link-{{ $current }}" class="nav-link" href="{{ .URL }}">{{ $text }}</a>
   {{ end }}
-  </nav>
+  <button id="opener" class="ui-button ui-corner-all ui-widget ui-state-default ui-button-text-icon-primary">
+    <span class="ui-button-icon-primary ui-icon ui-icon-cart"></span>
+    <span class="ui-button-text">Wishlist</span>
+  </button>
+ </nav>
+</div>
+<div id="dialog" title="Wishlist" style="display: inline-block;" align="center">
+  <div class="row">
+      <div class="col-sm-1">
+        <div id="cart" style="max-width: 100%;display: inline-block;" ></div>   
+      </div> 
+  </div>
 </div>

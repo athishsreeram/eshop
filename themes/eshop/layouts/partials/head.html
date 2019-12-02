@@ -1,11 +1,57 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ hugo.Generator }}
-    {{ $css := "css/bootstrap.min.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css }}">
-    {{ $title := print .Title " | " .Site.Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <title>{{ $title }}</title>
-    {{ partial "style.html" . }}
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ hugo.Generator }}
+  {{ $css := "css/bootstrap.min.css" | absURL }}
+  <link rel="stylesheet" href="{{ $css }}">
+  {{ $css1 := "css/simple_Cart.css" | absURL }}
+  <link rel="stylesheet" href="{{ $css1 }}">
+  <link rel="stylesheet" href="https://jqueryui.com/jquery-wp-content/themes/jquery/css/base.css?v=1">
+  <link rel="stylesheet" href="https:////code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+      integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous"></script>
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  {{ $js := "js/jQuery.SimpleCart.js" | absURL }}
+  {{ $contact := "contacts/contacts" | absURL }}
+ 
+  <script src="{{ $js }}" ></script>
+  <script>
+ 
+  $(document).ready(function () {
+    $('#cart').simpleCart({
+      addtoCartClass: '.sc-add-to-cart',
+      cartProductListClass: '.cart-products-list',
+      totalCartCountClass: '.total-cart-count',
+      totalCartCostClass: '.total-cart-cost',
+      showcartID : '#show-cart',
+      itemCountClass : '.item-count'
+  });
+  $( "#dialog" ).dialog({
+    autoOpen: false,
+    minWidth: 600,
+    minHeight: 600,
+    show: {
+      effect: "blind",
+      duration: 1000
+    },
+    hide: {
+      effect: "explode",
+      duration: 1000
+    }
+  });
+
+  $( "#opener" ).on( "click", function() {
+    $( "#dialog" ).dialog( "open" );
+  });
+  $( "#opener" ).on( "click", function() {
+    $('#foo').trigger('click');
+  });
+ 
+});
+  </script>
+  <p id="url" val="{{ $contact }}"></p>
+  <title>{{ $title }}</title>
+  {{ partial "style.html" . }}
