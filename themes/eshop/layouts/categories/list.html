@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{ partial "products/common/site-main-nav.html" . }} 
+                    </div>
+                </div>
+                <div class="row">
+                    {{ range .Data.Pages }} 
+                        {{ partial "products/list/product-list-item.html" . }} 
+                    {{ end }}
+                </div>
+            </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+

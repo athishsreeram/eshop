@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on EShop</title>
+    <link>https://eshop-psi-ten.now.sh/categories/</link>
+    <description>Recent content in Categories on EShop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 22:14:57 -0600</lastBuildDate>
+    
+	<atom:link href="https://eshop-psi-ten.now.sh/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bangle</title>
+      <link>https://eshop-psi-ten.now.sh/categories/bangle/</link>
+      <pubDate>Sat, 12 Jan 2019 22:14:57 -0600</pubDate>
+      
+      <guid>https://eshop-psi-ten.now.sh/categories/bangle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earrings</title>
+      <link>https://eshop-psi-ten.now.sh/categories/earrings/</link>
+      <pubDate>Sat, 12 Jan 2019 22:14:57 -0600</pubDate>
+      
+      <guid>https://eshop-psi-ten.now.sh/categories/earrings/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

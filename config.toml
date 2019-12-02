@@ -1,0 +1,26 @@
+baseURL = "https://eshop-psi-ten.now.sh/"
+languageCode = "en-us"
+title = "EShop"
+
+
+theme = "eshop"
+
+[permalinks]
+  products = "/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "Collections"
+    pre = "home"
+    url = "/products/"
+    weight = 1
+  [[menu.main]]
+    name = "Upcoming Sale"
+    pre = "Collections"
+    url = "/upcoming/upcoming"
+    weight = 2
+  [[menu.main]]
+    name = "Contact Us"
+    pre = "Upcoming Sale"
+    url = "/contacts/contacts"
+    weight = 3

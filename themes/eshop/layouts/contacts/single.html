@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 mb-5">
+                  <h2>{{ .Params.title }}</h2>
+                  <hr>
+                  <p>{{ .Params.Description }}</p>
+                  <p>{{ .Content }}</p>
+                </div>
+        
+                <div class="col-md-6 mb-5">
+                  <h2>{{ .Params.contact }}</h2>
+                  <hr>
+                  <address>
+                    <strong>{{ .Params.name }}</strong>
+                    <br>{{ .Params.address1 }}
+                    <br>{{ .Params.address2 }}
+                    <br>
+                  </address>
+                  <address>
+                    <abbr title="Phone">P:</abbr>
+                    {{ .Params.phone }}
+                    <br>
+                    <abbr title="Email">E:</abbr>
+                    <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+                  </address>
+                </div>
+        
+              </div>
+        </div> 
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+
+
