@@ -1,4 +1,5 @@
 baseURL = "https://eshop-psi-ten.now.sh/"
+#baseURL = "https://kyva.ca/"
 languageCode = "en-us"
 title = "Kavy's"
 theme = "eshop"
