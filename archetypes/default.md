@@ -8,5 +8,6 @@ comparePrice: ""
 inStock: true
 variants: []
 categories: []
+pricerange: []
 ---
 

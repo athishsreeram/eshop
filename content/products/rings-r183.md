@@ -7,6 +7,7 @@ actualPrice: "12"
 newPrice: "10"
 inStock: true
 categories: ["Ring"]
+pricerange: ["1to10"]
 ---
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  

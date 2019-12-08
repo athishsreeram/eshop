@@ -3,10 +3,11 @@ title: "Chain BC132"
 date: 2019-01-12T22:14:57-06:00
 thumbnailImage: "https://s.ecrater.com/stores/27305/5c4e1e9a1f6a9_27305b.jpg"
 draft: false
-actualPrice: "12"
-newPrice: "10"
+actualPrice: "20"
+newPrice: "12"
 inStock: true
 categories: ["Chain"]
+pricerange: ["10to20"]
 ---
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  

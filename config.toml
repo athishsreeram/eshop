@@ -1,7 +1,13 @@
 baseURL = "https://eshop-psi-ten.now.sh/"
 languageCode = "en-us"
-title = "EShop"
+title = "Kavy's"
 theme = "eshop"
+
+[params]
+  category = "Categories"
+  pricerange = "Price Filter"
+  Title = "Kavy's Collections"
+
 [permalinks]
   products = "/:filename/"
 [menu]
@@ -20,3 +26,7 @@ theme = "eshop"
     pre = "Upcoming Sale"
     url = "/contacts/contacts"
     weight = 3
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  pricerange = "pricerange"

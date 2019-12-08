@@ -3,7 +3,7 @@ title: About
 description: My Biography
 date: 2019-02-28
 ---
-# Welcome to EShop!  <br>
+# Welcome to Kavy's Collections!  <br>
 ***Express your love for magic, fantasy and your favourite characters with our newest collection.***
 
 

@@ -7,6 +7,7 @@ actualPrice: "10"
 newPrice: 
 inStock: true
 categories: ["Bangle"]
+pricerange: ["1to10"]
 ---
 If you can keep your head when all about you  
 Are losing theirs and blaming it on you,  
