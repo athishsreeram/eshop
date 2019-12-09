@@ -1,16 +1,38 @@
 <div id="nav-border" class="container">
-  <nav id="nav" class="nav justify-content-center">
-  {{ range .Site.Menus.main }} 
-    {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
-    {{ $current := .Weight }}
-    {{ $text := print $icon " " .Name | safeHTML }}
-    <a id="link-{{ $current }}" class="nav-link" href="{{ .URL }}">{{ $text }}</a>
-  {{ end }}
-  <button id="opener" class="ui-button ui-corner-all ui-widget ui-state-default ui-button-text-icon-primary">
-    <span class="ui-button-icon-primary ui-icon ui-icon-cart"></span>
-    <span class="ui-button-text">Wishlist</span>
-  </button>
- </nav>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li>
+              <a href="http://www.twitter.com/athishsreeram"><img src="https://image.flaticon.com/icons/svg/174/174876.svg" width="30" height="30" alt="alt text" title="twitter icon with padding"></a>
+              <a href="http://www.facebook.com/athishsreeram"><img src="https://image.flaticon.com/icons/svg/174/174848.svg" width="30" height="30" alt="alt text" title="facebook icon with padding"></a>
+              <a href="https://plus.google.com/+athishsreeram"><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt="alt text" width="30" height="30" title="google plus icon with padding"></a>
+          </li>
+          <li>
+            &nbsp;
+          </li>
+        {{ range .Site.Menus.main }} 
+          {{ $current := .Weight }}
+          {{ $text :=  .Name  }}
+          <li class="nav-item active">
+              <a id="link-{{ $current }}" class="nav-link" href="{{ .URL }}">{{ $text }}<span class="sr-only">(current)</span></a>
+          </li>
+        {{ end }}
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <button id="opener" class="ui-button ui-corner-all ui-widget ui-state-default ui-button-text-icon-primary">
+            <span class="ui-button-icon-primary ui-icon ui-icon-cart"></span>
+            <span class="ui-button-text">Wishlist</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-1" > 
+      <div class="row">+1 647-679-2723</div>
+      <div class="row">   <a href="mailto:alpha@gmail.com">alpha@gmail.com</a></div>
+   </div>
+  </nav>
+
 </div>
 <div id="dialog" title="Wishlist" style="display: inline-block;" align="center">
   <div class="row">

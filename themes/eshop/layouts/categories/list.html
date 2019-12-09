@@ -24,13 +24,25 @@
     </script>
     <style>
     .search-basic-cs {
-        width: 130px;
+        width: 400px;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
     /* When the input field gets focus, change its width to 100% */
     .search-basic-cs:focus {
         width: 100%;
+    }
+    ::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
     }
     </style>
     <body>
@@ -43,7 +55,7 @@
                 </div>
                 <div class="row">
                     <label for="search-basic">Search Input:</label>
-                    <input id="myInput" class="search-basic-cs" type="search" name="search" id="search-basic" placeholder="Search..">
+                    <input id="myInput" class="search-basic-cs" type="search" name="search" id="search-basic" size="100" placeholder="Search..">
                 </div>
                 <br>
                 <div class="row">

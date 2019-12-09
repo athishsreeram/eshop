@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Us
 description: My Biography
 date: 2019-02-28
 contact: contact
