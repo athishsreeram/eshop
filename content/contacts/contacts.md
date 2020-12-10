@@ -3,7 +3,7 @@ title: About Us
 description: My Biography
 date: 2019-02-28
 contact: contact
-phone: +1 123123123
+phone: +1 626 292 1242
 email: "alpha@gmail.com"
 name: Alpha
 address1: Brampton
