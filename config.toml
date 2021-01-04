@@ -31,6 +31,10 @@ theme = "eshop"
     name = "Baby Shop"
     pre = "Baby Shop"
     url = "/babylist/babylist"
+  [[menu.main]]
+    name = "ecwid"
+    pre = "ecwid"
+    url = "/ecwid/ecwid"  
     weight = 3
 [taxonomies]
   category = "categories"
